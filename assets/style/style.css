@@ -1,1 +1,23 @@
 /* BASIC STYLES HERE */
+.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hide {
+    display: none;
+    transition: ease-in-out;
+}
+
+.quote:hover+.hide {
+    display: block;
+}
+
+
+.celsius {
+    display: none;
+}
+
+.fahrenheit:hover+.celsius {
+    display: block;
+}

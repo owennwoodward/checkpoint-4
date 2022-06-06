@@ -4,6 +4,20 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   /** @type {import('./Models/Value').Value[]} */
   values = []
+
+  /** @type {import('./Models/Quote').Quote[]} */
+
+  quotes = []
+
+  weather = []
+
+  image = []
+
+  clock = []
+
+  todos = []
+
+  activeWeather = {}
 }
 
 export const ProxyState = new Proxy(new AppState(), {
